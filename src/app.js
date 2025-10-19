@@ -1,11 +1,9 @@
-import "bootstrap";
-import "./style.css";
-
-
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
 
 window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
+  const lista = document.querySelectorAll("#lista-excusas li");
+  const indice = Math.floor(Math.random() * lista.length);
+  const excusa = lista[indice].textContent;
+  document.getElementById("excusa").textContent = excusa;
 };
+
+
